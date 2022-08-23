@@ -9,5 +9,5 @@ var events = [
 ];
 
 var handler = new EventHandler(events);
-var result = handler.getByMonth(06).getSummary();
+var result = handler.getUniqueDateAndSort(06);
 console.log(result);

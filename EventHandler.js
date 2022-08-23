@@ -39,7 +39,7 @@ function EventHandler(arr)
 
         temp = this.array.map(function(element)
         {
-            if (!startDateArr.includes(element.dateStart) && !endDateArr.includes(element.dateEnd))
+            if (!startDateArr.includes(element.dateStart) || !endDateArr.includes(element.dateEnd))
             {
                 startDateArr.push(element.dateStart);
                 endDateArr.push(element.dateEnd);
